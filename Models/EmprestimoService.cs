@@ -34,7 +34,9 @@ namespace Biblioteca.Models
         {
             using(BibliotecaContext bc = new BibliotecaContext())
             {
-                return bc.Emprestimos.Include(e => e.Livro).ToList();
+            
+              return bc.Emprestimos.Include(e => e.Livro).OrderBy(e => e.DataDevolucao).ToList();
+              
             }
         }
 
