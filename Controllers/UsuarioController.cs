@@ -2,6 +2,8 @@ using Biblioteca.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
+using System;
 
 namespace Biblioteca.Controllers
 {
@@ -9,14 +11,22 @@ namespace Biblioteca.Controllers
     {
         public IActionResult ListaDeUsuarios(){
             
+            Autenticacao.CheckLogin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
+
+            
             List<Usuario> Listagem = new UsuarioService().Listar();
 
-            return View();
+            return View(Listagem);
 
         }
 
         public IActionResult EditarUsuario(int id)
         {
+            
+            Autenticacao.CheckLogin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
+
             Usuario user = new UsuarioService().Listar(id);
             return View(user);
                         
@@ -25,7 +35,11 @@ namespace Biblioteca.Controllers
         [HttpPost]
          public IActionResult EditarUsuario(Usuario userEditado)
         {
+            userEditado.Senha = Criptografo.TextoCriptografado(userEditado.Senha);
+            
             UsuarioService us = new UsuarioService();
+            us.EditarUsuario(userEditado);
+            new UsuarioService().EditarUsuario(userEditado);
             return RedirectToAction("ListaDeUsuarios");
                         
         }
@@ -33,7 +47,9 @@ namespace Biblioteca.Controllers
         public IActionResult RegistrarUsuarios()
         {
     
-            // autenticação
+            Autenticacao.CheckLogin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
+
             return View();
                         
         }
@@ -42,8 +58,10 @@ namespace Biblioteca.Controllers
         public IActionResult RegistrarUsuarios(Usuario novoUser)
         {
            
-            // autenticação
-            // criptografia de senha
+            Autenticacao.CheckLogin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
+
+            novoUser.Senha = Criptografo.TextoCriptografado(novoUser.Senha);
 
             UsuarioService us = new UsuarioService();
             us.IncluirUsuario(novoUser);
@@ -54,6 +72,9 @@ namespace Biblioteca.Controllers
 
         public IActionResult ExcluirUsuario(int id)
         {
+           
+            Autenticacao.CheckLogin(this);
+            Autenticacao.verificaSeUsuarioEAdmin(this);
            
             UsuarioService us = new UsuarioService();
             us.ExcluirUsuario(id);
@@ -73,7 +94,8 @@ namespace Biblioteca.Controllers
            public IActionResult NeedAdmin()
         {
            
-           // autenticação
+           Autenticacao.CheckLogin(this);
+                  
            return View();                
         }
 

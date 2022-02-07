@@ -14437,6 +14437,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ozima\\Dropbox\\Ozimar\\Sesc\\Tecnico\\Estudos\\Etapa_04\\Biblioteca\\Views\\Usuario\\RegistrarUsuarios.cshtml",
+      "TargetPath": "Views\\Usuario\\RegistrarUsuarios.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ozima\\Dropbox\\Ozimar\\Sesc\\Tecnico\\Estudos\\Etapa_04\\Biblioteca\\Views\\Emprestimo\\Edicao.cshtml",
       "TargetPath": "Views\\Emprestimo\\Edicao.cshtml",
       "FileKind": "mvc"
@@ -14444,6 +14449,11 @@
     {
       "FilePath": "c:\\Users\\ozima\\Dropbox\\Ozimar\\Sesc\\Tecnico\\Estudos\\Etapa_04\\Biblioteca\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ozima\\Dropbox\\Ozimar\\Sesc\\Tecnico\\Estudos\\Etapa_04\\Biblioteca\\Views\\Usuario\\NeedAdmin.cshtml",
+      "TargetPath": "Views\\Usuario\\NeedAdmin.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14464,6 +14474,11 @@
     {
       "FilePath": "c:\\Users\\ozima\\Dropbox\\Ozimar\\Sesc\\Tecnico\\Estudos\\Etapa_04\\Biblioteca\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ozima\\Dropbox\\Ozimar\\Sesc\\Tecnico\\Estudos\\Etapa_04\\Biblioteca\\Views\\Usuario\\EditarUsuario.cshtml",
+      "TargetPath": "Views\\Usuario\\EditarUsuario.cshtml",
       "FileKind": "mvc"
     },
     {

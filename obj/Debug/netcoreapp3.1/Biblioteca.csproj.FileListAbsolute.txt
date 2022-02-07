@@ -52,3 +52,6 @@ C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\obj\Debug
 C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.pdb
 C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.genruntimeconfig.cache
 C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\ListaDeUsuarios.cshtml.g.cs
+C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\RegistrarUsuarios.cshtml.g.cs
+C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\EditarUsuario.cshtml.g.cs
+C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\NeedAdmin.cshtml.g.cs
