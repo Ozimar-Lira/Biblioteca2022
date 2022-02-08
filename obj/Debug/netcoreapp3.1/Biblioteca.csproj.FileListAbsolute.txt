@@ -55,3 +55,6 @@ C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\obj\Debug
 C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\RegistrarUsuarios.cshtml.g.cs
 C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\EditarUsuario.cshtml.g.cs
 C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\NeedAdmin.cshtml.g.cs
+C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\bin\Debug\netcoreapp3.1\JetBrains.Annotations.dll
+C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\bin\Debug\netcoreapp3.1\X.PagedList.dll
+C:\Users\ozima\Dropbox\Ozimar\Sesc\Tecnico\Estudos\Etapa_04\Biblioteca\bin\Debug\netcoreapp3.1\X.PagedList.Mvc.dll

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System;
 
+
 namespace Biblioteca.Controllers
 {
     
@@ -36,7 +37,7 @@ namespace Biblioteca.Controllers
             return RedirectToAction("Listagem");
         }
 
-        public IActionResult Listagem(string tipoFiltro, string filtro)
+        public IActionResult Listagem(string tipoFiltro, string filtro, string itensPorPagina, int NumDaPagina, int PaginaAtual)
         {
             Autenticacao.CheckLogin(this);
             FiltrosEmprestimos objFiltro = null;
@@ -46,6 +47,10 @@ namespace Biblioteca.Controllers
                 objFiltro.Filtro = filtro;
                 objFiltro.TipoFiltro = tipoFiltro;
             }
+
+            ViewData["empPorPagina"]=(string.IsNullOrEmpty(itensPorPagina)?10 : int.Parse(itensPorPagina));
+            ViewData["PaginaAtual"] = (PaginaAtual != 0 ? PaginaAtual : 1);
+         
             EmprestimoService emprestimoService = new EmprestimoService();
             return View(emprestimoService.ListarTodos(objFiltro));
         }
