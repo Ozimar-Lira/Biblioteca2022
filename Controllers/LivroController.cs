@@ -15,7 +15,7 @@ namespace Biblioteca.Controllers
         public IActionResult Cadastro(Livro l)
         {
             
-          if (!string.IsNullOrEmpty(l.Titulo) && string.IsNullOrEmpty(l.Autor) && l.Ano !=0)
+          if (!string.IsNullOrEmpty(l.Titulo) && !string.IsNullOrEmpty(l.Autor) && l.Ano !=0)
           {
 
  
